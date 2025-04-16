@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            manos a la obra
+        </title>
+    </head>
+
+<body class="bg-white">
+
+    <div class="flex justify-center bg-slate-400">
+        <header class="w-full max-w-6xl">
+            <!-- Contenedor flex para alinear título y navegación horizontalmente -->
+            <div class="flex justify-between items-center my-6">
+                <!-- Título a la izquierda -->
+                <h1 class="text-black font-bold text-4xl ">DATA RELEVANTE PARA HISTORIA DE ZELDA</h1>
+                
+                <!-- Navegación a la derecha -->
+                <nav class=" justify-between">
+                    <ul class="hidden md:flex space-x-4 ">
+                        <li class="bg-slate-500"><a href="#eljuego" class="hover:underline">INFORMACION</a></li>
+                        <li class="bg-slate-500"><a href="#video" class="hover:underline">VIDEO</a></li>
+                    </ul>
+                    <button id="abrirmenu" class="md:hidden text-black p-4">☰</button>
+                    <div id="mobileMenu" class="hidden  inset-0 bg-slate-400 bg-opacity-95 z-50 md:hidden">
+                        <div class="flex flex-col items-center justify-center h-full">
+                            
+                            <ul class="flex flex-col space-y-4 text-center">
+                                <li class="bg-slate-500 px-6 py-3"><a href="#eljuego" class="text-black text-xl">INFORMACION</a></li>
+                                <li class="bg-slate-500 px-6 py-3"><a href="#video" class="text-black text-xl">VIDEO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    
+    <img src="zeldawaso.jpeg" alt="juego de zelda" class="w-64  mx-auto ">
+    <br>
+    <br>
+    <!--la p sirve para agregar un margen a todo al rededor-->
+    <div class="grid grid-cols-3 p-5 font-serif" id="eljuego">
+        <h3 class="mr-10 text-center bg-red-50 ">
+            <span class="text-3xl "> RESUMEN 
+            <br> 
+            </span> 
+            <p class="bg-red-100 mt-5 " > El juego se enfoca en el joven héroe Link, quien emprende una aventura en el reino de Hyrule para detener a Ganondorf, rey de la tribu Gerudo, antes de que encuentre la Trifuerza, una reliquia sagrada capaz de concederle cualquier deseo a su poseedor. </p>
+        </h3>
+        <h3 class="text-center bg-red-50"> 
+            <span class=" text-3xl"> FECHA DE CREACION </span>
+            
+            <p class="mt-5 bg-red-100"> 21 de noviembre de 1998 se empezó a reescribir la historia de los videojuegos. The Legend of Zelda: Ocarina of Time se estrenaba en Japón, y pocos días después hacía lo propio en el resto de territorios. Nintendo publicaba el juego más ambicioso jamás visto en consola alguna.
+                </p>
+        </h3>
+        <h3 class="ml-10 text-center bg-red-50">
+            <span class="text-3xl  ">INNOVACION </span>
+            <p class="bg-red-100 mt-5"> juego introdujo características como un sistema de fijación de objetivo y botones sensibles al contexto, que desde entonces se han vuelto comunes en los juegos de aventuras en 3D. El jugador debe tocar canciones en una ocarina para avanzar. Ocarina of Time fue aclamado por la crítica y los consumidores, quienes elogiaron sus gráficos, sonido, jugabilidad, banda sonora y guion</p>
+        </h3>
+    </div>
+    <div class="text-center text-4xl text-white bg-slate-900">
+        <h2>ROLA PARA CURTIRSE</h2>
+    </div>
+    <br>
+<div class="bg-red-50">
+    <div class="max-w-lg mx-auto ">
+        <div class="relative w-full" style="padding-top: 56.25%;">
+            <iframe 
+                class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/0hEYvdMoF2g?list=PLD7ixwhyZrDHOHDgm7rnfpqUM6tFswEar" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class=" grid grid-cols-2 " id="video">
+    <div class="relative w-full max-w-lg mx-auto" style="padding-top: 56.25%;">
+        <iframe 
+            class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+            src="https://www.youtube.com/embed/N3OZoErzJg0?list=PLD7ixwhyZrDHOHDgm7rnfpqUM6tFswEar&index=3"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+        ></iframe>
+    </div>
+    <h2 class=" font-serif bg-red-100 mr-20 text-6xl text-center p-10">otra cancion que sin dudas hara que tu corazon levite al escucharla. <br> <br>(Dato irrelevante es mi alarma para despertarme)</h2>
+</div>
+
+<!--el fotter es para crear un pie de pagina-->
+<footer class="bg-slate-700 p-2 mt-10 text-white text-center">
+    <p>Ignacio Kotting - 2025 - Lenguajes III - liberen la promocion</p>
+    <a href="https://open.spotify.com/user/bmeh5bzflmmvtzqolzbbvup44?si=59857bbcf1574e61" class="inline-block mt-2">
+        <img src="spotify-icon-free-png.webp" class="w-10 h-10 ">
+    </a>
+</footer>
+
+<br>
+<br>
+
+    <script>
+        document.getElementById('abrirmenu').addEventListener('click', function () {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+
+
+</body>
+</html>
